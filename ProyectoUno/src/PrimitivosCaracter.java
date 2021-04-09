@@ -1,4 +1,4 @@
-public class CaracterRename {
+public class PrimitivosCaracter {
     public static void main(String[] args) {
         System.out.println("Hola hola");
         char simbolo = '@';
@@ -12,10 +12,17 @@ public class CaracterRename {
 
         System.out.println("simbolo = decimal: " + (simbolo == decimal));
 
-        System.out.println("char corresponde en byte a " + Character.BYTES);
-        System.out.println("char corresponde en bites a " + Character.SIZE);
-        System.out.println("char Max value " + Character.MAX_VALUE);
-        System.out.println("char Min value " + Character.MIN_VALUE);
+        char espacio = '\u0020';
+        char retroceso = '\b';
+        char tabulador = '\t';
+        char nuevaLinea = '\n';
+        char retornoCarro = '\r';
+
+        System.out.println("char corresponde en \bbyte a " + espacio + Character.BYTES);
+        System.out.println("char corresponde en bites a " + nuevaLinea + retroceso + Character.SIZE);
+        System.out.println("char Max value " + tabulador + Character.MAX_VALUE);
+        System.out.println("char Min \n value " + retornoCarro + Character.MIN_VALUE);
+
 
     }
 
